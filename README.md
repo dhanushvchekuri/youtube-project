@@ -68,3 +68,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Debounceing Functionality for Search
+
+If typing very fast difference between 2 key strokes is very less. No need for intermediate results and it is useless to call APIs for every key stroke. Affects Performance.
+
+==> If Difference between 2 key strokes less than <200ms> - Decline the API call
+==> greater <200ms> - Make an API call
+
+If typing very slow difference between 2 key strokes is more.
